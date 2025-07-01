@@ -24,6 +24,9 @@ last_name = "lovelace"
 full_name = f"{first_name} {last_name}"
 # 这种字符串称为 f 字符串。f 是 format（设置格式）的简写，
 # 因为Python 通过把花括号内的变量替换为其值来设置字符串的格式。
+# f-字符串里的 {} 会自动对其中的任何非字符串变量或表达式调用其 __str__() 方法
+# 而是Python面向对象设计中的一个约定。几乎所有的Python内置对象（如整数int、浮点数float、列表list、布尔值bool等）都有一个名为 __str__() 的特殊方法。
+# 这个方法的任务就是返回一个“对用户友好的”、适合打印的字符串表示。
 
 print(full_name)
 print(f"Hello, {full_name.title()}!")
