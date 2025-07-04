@@ -16,7 +16,11 @@ print("Hello Python world!")
 # 它需要由Python虚拟机（Python Virtual Machine, PVM）来执行。
 # PVM是一个巨大的循环，它逐条读取字节码指令，然后在您的计算机上模拟出这些指令对应的操作。这个“解释并执行字节码”的过程，才是Python“解释型”语言特性的真正体现。
 
-# 一般说Python解释器，指的是CPython
+# 一般说Python解释器，指的是CPython。
+# CPython有两个比较大的缺点，有GIL特性，使得Python 的多线程对于 CPU 密集型（CPU-bound）任务是无效的。
+# CPython的虚拟机PVM缺乏成熟的即时编译器 (Just-In-Time, JIT) 和相关的自适应优化技术。
+# 这是两个重要缺陷，简单了解。
+
 # CPython是Python语言的官方、标准、也是使用最广泛的实现。从Python官网（python.org）下载并安装的那个Python，就是CPython。
 # 它的名字来源于它是用C语言编写的。这正是为什么Python能够方便地与C语言库进行交互，以及为什么很多Python的内置函数性能极高的原因——因为它们的底层就是高效的C代码。
 # CPython正是“先编译成字节码，再由虚拟机解释执行”机制的实现者。它包含了编译器和Python虚拟机（PVM）两部分。

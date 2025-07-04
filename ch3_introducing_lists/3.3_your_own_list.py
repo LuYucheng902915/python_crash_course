@@ -1,7 +1,10 @@
-shinkansen_lines = ["Hayabusa (E5)", "Nozomi (N700S)", "Komachi (E6)", "Kagayaki (E7)"]
+# 3-3. Your Own List:
+# Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples.
+# Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 
-for train in shinkansen_lines:
+transportation_modes = ["motorcycle", "subway", "bus", "car"]
 
-    statement = f"I would like to take a trip on the {train} Shinkansen."
+for mode in transportation_modes:
+    statement = f"My favorite mode of transporatation is {mode}."
 
     print(statement)

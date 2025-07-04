@@ -13,7 +13,7 @@ print(name.title())
 # title() 方法出现在这个变量的后面。方法(method)是 Python 可对数据执行的操作。
 # 在 name.title() 中，name后面的句点（.）让 Python 对 name 变量执行 title() 方法指定的操作。
 # title() 函数不需要额外的参数，因此它后面的括号是空的。
-# title() 方法以首字母大写的方式显示每个单词，即将每个单词的首字母都改为大写,后面的字母改为小写。
+# title() 方法以首字母大写的方式显示每个单词，即将每个单词的首字母都改为大写，后面的字母改为小写。
 # name.title() 返回一个新字符串，原字符串不变。
 # name.title() 本身不是一个变量，而是一个表达式（Expression）。
 # Python会首先对这个表达式求值（Evaluate），得到它的返回值（Return Value）。
@@ -32,15 +32,15 @@ print(name.lower())
 # 存储数据往往把数据改成全小写再存储。
 
 
-# 在字符串中使用变量
+# 在字符串中使用变量。
 first_name = "ada"
 last_name = "lovelace"
 full_name = f"{first_name} {last_name}"
 # 这种字符串称为 f 字符串。f 是 format（设置格式）的简写，因为Python 通过把花括号内的变量替换为其值来设置字符串的格式。
-# f-字符串里的 {} 会自动对其中的任何非字符串变量或表达式调用其 __str__() 方法
+# f-字符串里的 {} 会自动对其中的任何非字符串变量或表达式调用其 __str__() 方法。
 # 而是Python面向对象设计中的一个约定。几乎所有的Python内置对象（如整数int、浮点数float、列表list、布尔值bool等）都有一个名为 __str__() 的特殊方法。
 # 这个方法的任务就是返回一个“对用户友好的”、适合打印的字符串表示。
-# 使用 f 字符串可以完成很多任务，如利用与变量关联的信息来创建完整的消息
+# 使用 f 字符串可以完成很多任务，如利用与变量关联的信息来创建完整的消息。
 
 print(full_name)
 print(f"Hello, {full_name.title()}!")
@@ -49,7 +49,7 @@ message = f"Hello, {full_name.title()}!"
 print(message)
 
 
-# 使用制表符/换行符添加空白
+# 使用制表符/换行符添加空白。
 # 在编程中，空白（Whitespace）泛指任何非打印字符，如空格、制表符和换行符。
 # 你可以使用空白来组织输出，让用户阅读起来更容易。
 
@@ -60,10 +60,10 @@ print("Languages:\n\tPython\n\tC\n\tJavaScript")
 # 字符串 "\n\t" 让Python 换到下一行，并在下一行开头添加一个制表符。
 
 
-# 删除字符串中多余的空白
+# 删除字符串中多余的空白。
 favorite_language = "python "
 favorite_language
-favorite_language.rstrip()  # 删除末尾的空格,但不会改变字符串
+favorite_language.rstrip()  # 删除末尾的空格，但不会改变字符串
 favorite_language  # 输出仍然是 "python "
 favorite_language = favorite_language.rstrip()
 # 将删除空格后的字符串赋值给变量，才能永久删除空白。
@@ -98,7 +98,7 @@ print(message)
 # message = 'one of Python's strengths is its diverse and supportive community.'
 #   message = 'one of Python's strengths is its diverse and supportive community.'
 #                                                                                ^
-# 语法错误发生在最后一个单引号后面（见❶）。在解释器看来，这种语法错误表明一些内容不是有效的 Python 代码。
+# 语法错误发生在最后一个单引号后面。在解释器看来，这种语法错误表明一些内容不是有效的 Python 代码。
 # SyntaxError: unterminated string literal (detected at line 67)
 # 上面这句会报错，因为字符串中的单引号与字符串的开始和结束引号冲突了。
 # 错误发生在最后一个单引号后面。
@@ -110,4 +110,4 @@ print(message)
 message = "one of Python's strengths is its diverse and supportive community."
 print(message)
 # message = 'one of Python\'s strengths is its diverse and supportive community.'
-# 上面这句也是正确的，但是保存后会被使用的格式工具修改格式成双引号
+# 上面这句也是正确的，但是保存后会被使用的格式工具修改格式成双引号。
