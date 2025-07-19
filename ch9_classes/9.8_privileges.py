@@ -56,15 +56,6 @@ class Admin(User):
         super().__init__(first_name, last_name, username, email, location)
         self.privileges = Privileges()
 
-    def show_privileges(self):
-        """Display the privileges this administrator has."""
-        print("\nPrivileges:")
-        if self.privileges:
-            for privilege in self.privileges:
-                print(f"- {privilege}")
-        else:
-            print("- This user has no privileges.")
-
 
 eric = Admin("eric", "matthes", "e_matthes", "e_matthes@example.com", "alaska")
 eric.describe_user()
