@@ -1,4 +1,15 @@
-venv/
-.mypy_cache/
-NOTES.md
+# PDM and Python virtual environments
+__pypackages__/
+.venv/
+.pdm-build/
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Tool-specific cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
